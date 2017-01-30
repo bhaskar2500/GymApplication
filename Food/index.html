@@ -1,0 +1,438 @@
+﻿﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from fitnfood.com.au/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Jan 2017 19:51:34 GMT -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Fat Loss meals, Muscle meals, diet meal delivery</title>
+  <meta name="keywords" content="fit, food, training, Gym, Workout, fat loss meals, fat loss Sydney, diet meal delivery, diet meal delivery Sydney, muscle meals Sydney, muscle meal delivery, muscle meal delivery Sydney, weight loss Sydney" />
+  <meta name="description" content="Welcome To Fit N Food for delicious fat loss meals and muscle meals delivered to your door. Order according to your goals and the suitable meal plan to have your diet meals delivered to your door." />
+  <meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
+  <base  />
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+  <meta http-equiv="pragma" content="no-cache" />
+
+
+{% load static from staticfiles %}
+<!-- main css -->
+  <link href="{% static 'css/reset.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/fonts.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet" type="text/css">
+<!--[if lt IE 9] >
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js" type="text/javascript"></script>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/ie7-squish.js" type="text/javascript"></script>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+
+<![endif]-->
+<script  src="https://code.jquery.com/jquery-3.1.1.min.js">  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js" type="text/javascript"></script>
+
+
+
+
+<link rel="Shortcut Icon" href="{% static 'images/fitnfood.ico' %}" />  
+</head>
+<body >
+  <div class="headerPnl">
+    <div class="mainDiv"> <a href="index.html"><img src="{% static 'images/logo.png' %}" alt="" class="logo" /></a>
+      <div class="topNav"> <div class="mnuIcon"><img src="{% static 'images/ddMnuIco.png' %}" alt="" /></div>
+      <ul class="top-nav-primary-ul">
+        <li><a href="index.html"  class="active">Home</a>
+        	        	
+        	
+        </li>
+        <li><a href="how-it-works/index.html" >How it Works</a>
+        	<ul class="ddMnu2">						<li><a  target="_self" href="faq/index.html">FAQ</a>
+					</ul>        </li>
+        <li><a href="get-started/index.html" >Get Started</a>
+        	        </li>
+        <li><a href="select-your-meal-plan/index.html" >Meal Plans</a></li>
+        <li><a href="fitness-centre/index.html" >Fitness</a>
+        	
+        	<ul class="ddMnu2">	
+				<li><a  target="_self" href="training-videos/index.html">Training Videos</a>
+			</ul>        	
+        	
+        </li>
+			  <li><a  style="cursor: pointer;"  class="show_hide" ng-click="logout()" href="/Auth">SignOut {{ user }}</a></li>
+          </ul>
+  </div>
+  <div class="ordNwBtn">
+  	<a href="get-started/index.html">Order<br /> Now</a>	
+      </div>
+    </div>
+  </div>
+
+<div class="hmPanelOne">
+	<div class="mainDiv">
+		<h2>Know your goals? Select from these set meal plans designed by our expert team</h2>
+		<div class="mainDiv2">		
+						<div class="tabSldr">
+				<div class="tabSldrLst">
+					<ul id="countrytabs">
+												<li><a  style="cursor: pointer;" rel="food0" class="selected">Fat Loss</a></li>
+												<li><a  style="cursor: pointer;" rel="food1" >Muscle gain</a></li>
+												<li><a  style="cursor: pointer;" rel="food2" >MacroLean</a></li>
+								            	
+					</ul>
+				</div>
+								<div class="tabContent" id="food0">
+					<h3>Fat Loss</h3>
+					<p>At Fit 'n Food we know you want fast fat loss results, but we also know it isn't easy. Planning, buying groceries, preparing, cooking. More importantly, what foods should you eat to speed up fat loss. We've made it easy. We deliver the whole package, you get the results. Fat loss meals delivered to your door, eating plans, training classes and free training videos to accelerate your transformation. Select from our proven fat loss meal plans below to start burning fat fast!</p>
+					<br class="clear" />
+					<img src="category_images/1419835937_img2.png" alt="" /> <img src="category_images/1419835937_img1.png" alt="" /> <img src="category_images/1411196526_fat-loss4.jpg" alt="" /> <br class="clear" />
+					<div class="chsMealPln normal_select">
+						<form name="choose_your_meal_plan0" method="post" action="http://fitnfood.com.au/select-your-meal-plan/#meal" onsubmit="return validate_choose_your_meal_plan('0');">
+							<input type="hidden" name="enter" value="choose_your_meal_plan" />
+							<input type="hidden" name="frm_choose_your_meal_plan" value="RIZCIWC4ZW" />
+							<input type="hidden" name="meal_plan_category_id" value="1" />
+							<label class="custom-select">
+								<select name="category_meal_plan" id="category_meal_plan_0">
+									<option value="">Choose your meal plan </option>
+																		<option value="10">Fat Loss Meal Plan (5 days)</option>									
+																		<option value="9">Fat Loss Meal Plan (7days)</option>									
+																		<option value="11">Paleo Meal Box</option>									
+																	</select><!-- - $135.40 p/w -->
+							</label>
+							<input name="submit" type="submit" value="Proceed" />
+						</form>	
+					</div>
+				</div>
+								<div class="tabContent" id="food1">
+					<h3>Muscle gain</h3>
+					<p>The food you eat is the most important part of gaining muscle. Fit 'n Food muscle meals will give you the exact nutrition you need to build muscle in the fastest time. Our muscle meal plans vary according to your desired goals. We have meals to focus on bulking with rapid muscle gain, meals for lean muscle gain and even pre-competition muscle meals. Get started on building your body now. Select from our delivered Muscle Meals below.</p>
+					<br class="clear" />
+					<img src="category_images/1419835994_img1.png" alt="" /> <img src="category_images/1419835994_img2.png" alt="" /> <img src="category_images/1419835994_img3.png" alt="" /> <br class="clear" />
+					<div class="chsMealPln normal_select">
+						<form name="choose_your_meal_plan1" method="post" action="http://fitnfood.com.au/select-your-meal-plan/#meal" onsubmit="return validate_choose_your_meal_plan('1');">
+							<input type="hidden" name="enter" value="choose_your_meal_plan" />
+							<input type="hidden" name="frm_choose_your_meal_plan" value="RIZCIWC4ZW" />
+							<input type="hidden" name="meal_plan_category_id" value="2" />
+							<label class="custom-select">
+								<select name="category_meal_plan" id="category_meal_plan_1">
+									<option value="">Choose your meal plan </option>
+																		<option value="4">Mass Gainer - 7 days - Carbs & Shakes</option>									
+																		<option value="3">Mass Gainer- 5 days - Carbs & shakes</option>									
+																		<option value="5">Muscle Gains - 5 days with Shakes</option>									
+																		<option value="6">Muscle Gains - 7 days with shakes</option>									
+																	</select><!-- - $232.10 p/w -->
+							</label>
+							<input name="submit" type="submit" value="Proceed" />
+						</form>	
+					</div>
+				</div>
+								<div class="tabContent" id="food2">
+					<h3>MacroLean</h3>
+					<p>The Fit 'n Food MacroLean diet was developed by our trainers, combining the methods which obtained clients fastest results in their body transformation. It sheds fat incredibly fast while simultaneously increasing body definition. Combining the elements of Intermittent fasting, carbohydrate cycling and balancing macro-nutrients, it will deliver the transformation you desire in fast time.</p>
+					<br class="clear" />
+					<img src="category_images/1419836038_img1.png" alt="" /> <img src="category_images/1419836038_img2.png" alt="" /> <img src="category_images/1419836038_img3.png" alt="" /> <br class="clear" />
+					<div class="chsMealPln normal_select">
+						<form name="choose_your_meal_plan2" method="post" action="http://fitnfood.com.au/select-your-meal-plan/#meal" onsubmit="return validate_choose_your_meal_plan('2');">
+							<input type="hidden" name="enter" value="choose_your_meal_plan" />
+							<input type="hidden" name="frm_choose_your_meal_plan" value="RIZCIWC4ZW" />
+							<input type="hidden" name="meal_plan_category_id" value="3" />
+							<label class="custom-select">
+								<select name="category_meal_plan" id="category_meal_plan_2">
+									<option value="">Choose your meal plan </option>
+																		<option value="7">MacroLean Shredding plan (Mens) Incl. Training</option>									
+																		<option value="8">MacroLean Shredding plan (womens) Incl. Training</option>									
+																	</select><!-- - $199.30 p/w -->
+							</label>
+							<input name="submit" type="submit" value="Proceed" />
+						</form>	
+					</div>
+				</div>
+				        
+				<a href="javascript:countries.cycleit('prev')"><img src="images/tabArwP.png" alt="" class="prv"  /></a> <a href="javascript:countries.cycleit('next')"><img src="images/tabArwN.png" alt="" class="nxt" /></a> 
+			
+			</div>
+		</div>
+	</div>
+    <br class="clear" />
+    <br class="clear" />
+    <a id="customize-your-own" style="cursor: pointer;" class="cstomzUrOwnHmBtn">Create your own plan</a>
+</div>
+
+			<div class="hmPanelThree">
+			<div class="mainDiv2">
+				<h2>Successful results from our members</h2>
+				<div class="tabSldr2">
+											<div class="tabSldr2Vdo" id="vdo0"><iframe width="475" height="372" src="http://www.youtube.com/embed/3xEhGvO68Gs" frameborder="0" allowfullscreen></iframe></div>	
+												<div class="tabSldr2Vdo" id="vdo1"><iframe width="475" height="372" src="http://www.youtube.com/embed/eOtRZSwj704" frameborder="0" allowfullscreen></iframe></div>	
+							
+
+					<div class="tabSldr2Ldt">
+						<ul id="flowertabs">        	
+														<li><a href="#url" rel="vdo0"><img src="../img.youtube.com/vi/3xEhGvO68Gs/default.jpg"  alt="" />Mona Lost over 33kg. Get started on our Fat loss Meal plans and boost your results with our Training videos and classes.<br>
+								<span>-- Mona&#39;s Transformation</span></a></li>	
+															<li><a href="#url" rel="vdo1"><img src="../img.youtube.com/vi/eOtRZSwj704/default.jpg"  alt="" />Anthony lost over 54kg and is still going. Get started with the only program where you will continue to see results month in month out. Work past any plateau with Fit &#39;n Food Macrolean system.<br>
+								<span>-- Anthony&#39;s Testimonial</span></a></li>	
+									
+							</ul>
+						</div>
+					
+					</div>
+					<br class="clear">
+					<div class="morTst"><input name="" type="submit" value="View More Results" onclick="location.href='testimonials/index.html'" /></div>
+					<br class="clear">
+					<div class="tabBotCont"><p>Fat Loss meals and Muscle meals delivered to your door. Get your fast transformation with our diet meals and training sessions to get you everything you need for the body you want!</p></div>
+				</div>
+			</div>
+			<div class="footerTop">
+	<div class="mainDiv2">
+		<ul>
+			<li>
+				<a  href="index.html">Home</a>
+			</li>
+						<li>
+				<a  target="_self" href="get-started/index.html"> Get Started </a>
+				
+				
+							</li>
+						<li>
+				<a  target="_self" href="how-it-works/index.html"> How It Works </a>
+				
+				
+				<ul>						<li><a  target="_self" href="faq/index.html">FAQ</a>
+					</ul>			</li>
+						<li>
+				<a  target="_self" href="select-your-meal-plan/index.html"> Select Your Meal Plan </a>
+				
+				
+							</li>
+					</ul>
+				<ul>
+						<li>
+				<a  target="_self" href="training/index.html"> Training </a>
+			</li>
+						<li>
+				<a  target="_self" href="about-us/index.html"> About Us </a>
+			</li>
+						<li>
+				<a  target="_self" href="privacy-policy/index.html"> Privacy Policy </a>
+			</li>
+						<li>
+				<a  target="_self" href="terms-and-conditions/index.html"> Terms and Conditions </a>
+			</li>
+					</ul>
+
+		
+		
+		<div class="footer_separator"></div>
+
+		<div class="free_training free_training_res">
+			<a ><img src="images/icons/free-training.png" /></a>
+		</div>
+
+		<div class="footerTopRt">
+			<p>
+				Ph: 1300362925				<br>
+				<a href="mailto:team@fitnfood.com.au">team@fitnfood.com.au</a>
+				<br>
+				f11/101 Rookwood Rd<br />
+Yagoona NSW 2199, Australia			</p>
+			<div class="solMda">
+				<a target="_blank" href="https://www.facebook.com/FitnFood"><img src="images/solIco1.png" alt="" /></a><a  target="_blank"  href="http://instagram.com/fitnfoodaus/"><img src="images/solIco2.png" alt="" /></a><a  target="_blank"  href="http://google.com/"><img src="images/solIco3.png" alt="" /></a><a  target="_blank"  href="http://youtube.com/"><img src="images/solIco4.png" alt="" /></a>
+			</div>
+		</div>
+
+		<div class="free_training">
+			<a href="fitness-centre/index.html"><img src="images/icons/free-training.png" /></a>
+		</div>
+
+	</div>
+	
+</div>
+<div class="footerBot">
+	&copy; Copyright 2017 Fit 'N' Food. All rights reserved.
+</div>
+
+<div class="askQuesPnl">	
+
+	<h6 onclick="open_me();">Ask us a Question</h6>
+    <img class="spechIcon" src="images/Speech_button.png" alt="" onclick="open_me();" />
+    <div class="askQuesPnlInr" id="askQuesFrm">
+    	<form method="post" name="frmquestion" action="http://fitnfood.com.au/ask-a-question/" onsubmit="return question_validate();">
+    	<input type="hidden" name="enter" value="question" />
+    	 <input type="hidden" name="secreate" value="4EXM3" />
+		<input type="hidden" name="before_login_form_id" value="ADWIEDKXNX" />
+    	<input name="question_name" id="question_name" type="text" value="" placeholder="Name"  />        
+        <input name="question_email" id="question_email"  type="text" value="" placeholder="Email Address"  />
+        <input name="question_phone" id="question_phone"  type="text" value="" placeholder="Phone Number"  />
+        <textarea name="question_message" id="question_message"  rows="" cols="" placeholder="Message/Question"></textarea>
+        <img src="captchaImage375e.png?secret=4EXM3" alt="captcha image"/>
+        <input name="captcha_input" id="captcha_input"  type="text" value="" placeholder="Enter what you see in the image"  />
+        <input name="" type="submit" value="SUBMIT" />
+        <input name="" type="button" value="CANCEL" onclick="close_me();" />
+       </form>
+    </div>
+    </div>
+
+
+<!-- Lightbox -->
+
+
+<link rel="stylesheet" href="{% static 'responsive_lightbox/stylesheet.css' %}" type="text/css" charset="utf-8">
+<link rel="stylesheet" href="{% static 'responsive_lightbox/reveal.css' %}" type="text/css">
+
+<!--<script type="text/javascript" src="responsive_lightbox/jquery.js"></script>-->
+<div class="popBox lboxOne" style="top:130px; opacity:1; visibility:hidden;" id="popup1">
+	<div class="lbHdr">
+		<a class="close-reveal-modal"><img src="images/icons/closeLb.png" alt="" /></a>
+	</div>
+
+	<!-- Sign Up -->
+	<div class="lbFrmPnl" id="member_signup_div"  style="display:none;">
+		<h3><span>Sign Up,</span> It will take less than a minute</h3>
+		
+        <form method="post" name="frmusersignup" action="http://fitnfood.com.au/sign-up/" onsubmit="return user_signup_validate();">
+			<input type="hidden" name="signup" value="users" />
+			<input type="hidden" name="before_login_form_id" value="ADWIEDKXNX" />
+			<ul>
+				<li>
+					<input name="fname" id="fname" type="text" value="" placeholder="Enter your First Name" />
+				</li>
+				<li>
+					<input name="lname" id="lname" type="text" value="" placeholder="Enter your Last Name" />
+				</li>
+				<li>
+					<input name="email_address" id="email_address" type="email" value="" placeholder="Enter your Email" />
+				</li>
+                <li>
+					<label style="float:right" class="custom-select">
+                        <select class="lg" id="gender_r" name="gender">
+                            <option value="" selected>Gender</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        </select>
+                    </label>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<input name="password" id="password" type="password" value="" placeholder="Password" />
+				</li>
+				<li>
+					<input name="cpassword" id="cpassword" type="password" value=""  placeholder="Confirm Password" />
+					<div class="alert_message" id="password_cpassword_msg" style="display: none;"></div>
+				</li>
+                <li>
+					<label style="float:right" class="custom-select">
+                        <select class="lg" id="hear_about_us" name="hear_about_us">
+                            <option value="">How did you hear about us?</option>
+                             				            	<option value="3" >Brochure</option>				
+				            				            	<option value="4" >Email mailshot</option>				
+				            				            	<option value="7" >Facebook</option>				
+				            				            	<option value="8" >Friend</option>				
+				            				            	<option value="5" >Google</option>				
+				            				            	<option value="13" >Instagram</option>				
+				            				            	<option value="9" >Other</option>				
+				            				            	<option value="10" >Radio advertising</option>				
+				            				            	<option value="6" >Through my gym/bootcamp</option>				
+				                                    </select>
+                    </label>
+				</li>
+				<li>
+					<input name="refered_code" type="text" value="" placeholder="Referrer number if any" />
+				</li>
+			</ul>
+			<br class="clear" />
+			<p>
+				<label>
+					<input name="term_of_use" type="checkbox" value="" />
+					<span id="term_of_use">I have read and agree to the Terms of Use</span> </label>
+				<br class="clear" />
+				<label>
+					<input name="newsletters"  id="newsletters" type="checkbox" value="1" />
+					<span>I'd like to receive "Fit 'N' Food" newsletters and special offers</span> </label>
+			</p>
+			<input name="submit" type="submit" value="Click to Sign Up" />
+		</form>
+	</div>
+
+	<!-- LOGIN -->
+
+	
+	<!-- Tranier Forgot your Password -->
+	<div class="lbFrmLog" id="trainer_forgot_password_div" style="display:none;">
+		<form method="post" name="frmtrainerforgotpassword" action="http://fitnfood.com.au/forgot-password/" onsubmit="return trainer_forgotpassword_validate();">
+			<input type="hidden" name="forgotpassword_type" value="trainers" />
+			<input type="hidden" name="before_login_form_id" value="ADWIEDKXNX" />
+			<h3>Forgot your <span>Password</span>?</h3>
+			<input name="email" type="email" id="trainer_forgot_email" value="" placeholder="Enter Your Email Address" />
+
+			<input name="submit" type="submit" value="Send" />
+			<a  style="cursor: pointer;" class="fgPass2" id="trainer_back_to_login">&laquo; Back to login</a>
+		</form>
+	</div>
+	<!-- Member Forgot your Password -->
+	<div class="lbFrmLog" id="member_forgot_password_div" style="display:none;">
+		<form method="post" name="frmmemberforgotpassword" action="http://fitnfood.com.au/forgot-password/" onsubmit="return member_forgotpassword_validate();">
+			<input type="hidden" name="forgotpassword_type" value="users" />
+			<input type="hidden" name="before_login_form_id" value="ADWIEDKXNX" />
+			<h3>Forgot your <span>Password</span>?</h3>
+			<input name="email" type="email" id="member_forgot_email" value="" placeholder="Enter Your Email Address" />
+			<input name="submit" type="submit" value="Send" />
+			<a  style="cursor: pointer;" class="fgPass2" id="member_back_to_login">&laquo; Back to login</a>
+		</form>
+	</div>
+
+	<!-- Member Login -->
+
+	<div id="member_trainer_login_div">
+		<div class="dblColBox" >
+			<div class="dblColBox1">
+				<h3>Member's Login</h3>
+				<form method="post" name="frmmemberlogin" action="http://fitnfood.com.au/login/" onsubmit="return member_login_validate();">
+					<input type="hidden" name="login_type" value="users" />
+					<input type="hidden" name="before_login_form_id" value="ADWIEDKXNX" />
+					<input name="email"  type="email" id="member_email" value="" placeholder="Enter Your Email Address" />
+					<input name="password" type="password" id="member_password"  value="" placeholder="Enter your Password" />
+					<input name="submit" type="submit" value="Login" class="lgn" />
+					<a style="cursor: pointer;" class="fgPass">Forgot your Password?</a>
+					<br class="clear">
+				</form>
+				<div class="dblColBoxOrPnl">
+					<span>OR</span>
+				</div>
+				<h3 style="padding-bottom:5px; padding-top:0">Login with OpenID &amp; get social</h3>
+				<p>
+					Select one of these third-party accounts:
+				</p>
+				<a href="indexc738.html?login=facebook"><img src="images/facebookBtn.png" alt="" /></a>
+				<a href="index667f.html?login=google"><img src="images/googleBtn.png" alt="" /></a>
+
+			</div>
+			<div class="dblColBox2">
+				&nbsp;
+			</div>
+			<div class="dblColBox3">
+				<h3>Trainer's Login</h3>
+				<form method="post" name="frmtrainerlogin" action="http://fitnfood.com.au/login/" onsubmit="return trainer_login_validate();">
+					<input type="hidden" name="login_type" value="trainers" />
+					<input type="hidden" name="before_login_form_id" value="ADWIEDKXNX" />
+					<input name="email"  type="email" id="trainer_email" value="" placeholder="Enter Your Email Address" />
+					<input name="password" type="password" id="trainer_password"  value="" placeholder="Enter your Password" />
+					<input name="submit" type="submit" value="Login" class="lgn" />
+					<a style="cursor: pointer;" class="fgPass1">Forgot your Password?</a>
+					<br class="clear">
+				</form>
+			</div>
+
+		</div>
+		<div class="membrYtPnl">
+			Not a member yet?
+			<input name="" type="submit" value="Click to Sign Up" class="membrYtSbmt" />
+			<br class="clear">
+		</div>
+	</div>
+</div>
+
+</body>
+<!-- Mirrored from fitnfood.com.au/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 07 Jan 2017 19:53:03 GMT -->
+</html>
