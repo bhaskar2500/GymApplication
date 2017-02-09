@@ -1,4 +1,4 @@
-authApp.service('api', function($resource){
+authApp.service('api',function($resource){
           return {
             auth: $resource('/api/SellerDetails/Auth/Login/', {}, {
                 login: {method: 'POST'},
@@ -8,4 +8,4 @@ authApp.service('api', function($resource){
                 create: {method: 'POST'}
             })
         };
-    })
+})
