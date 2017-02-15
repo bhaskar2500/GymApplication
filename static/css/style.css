@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 ::-moz-selection { background-color: #ffd303; color: #000; }
@@ -16,11 +16,11 @@ input[type="submit"], input[type="button"]{ -webkit-appearance: none;}
 .alert_message1{color: #FF0000; font-size: 12px;  padding-bottom: 10px; float: right;}
 .alert_message2{color: #99bf12; font-size: 12px;  padding-bottom: 10px; float: right; font-weight: bold;}
 
-.headerPnl{ position:fixed; top:28px; left:0; width:100%; height:94px; background:url(../images/floating-bg.png) repeat 0 0; z-index:99; }
+.headerPnl{ position:fixed; top:51px; left:0; width:100%; height:94px;background-color:#222222; z-index:1120; }
 
 .headerPnl div.mainDiv{ position:relative; height:94px; }
 
-.headerPnl2{ position:fixed; top:28px; left:0; width:100%; height:94px; z-index:999; background:url(../images/floating-bg.png) repeat 0 0; }
+.headerPnl2{ position:fixed; top:28px; left:0; width:100%; height:94px; z-index:999; background-color:#222222; }
 .headerPnl2 div.mainDiv{ position:relative; height:94px; }
 
 .headerPnl3{ position:fixed; top: -1px; left:0; width:100%; height:70px; background:url(../images/floating-bg.png) repeat 0 0; z-index:999; padding-top:0; }

@@ -4,5 +4,6 @@ urlpatterns=[
     
         url(r'^$', include(views.details)),
     
-         url(r'^create/$',include(views.CreateSellerAPI),namespace='SellerDetails')),
+         url(r'^create/$',include(views.CreateSellerAPI),namespace='SellerDetails')
     ]
+

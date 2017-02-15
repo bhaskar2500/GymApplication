@@ -1,0 +1,9 @@
+abstractstaticmethod
+abstractmethod
+__subclasscheck__
+get_cache_token
+abstractproperty
+WeakSet
+__instancecheck__
+ABCMeta
+abstractclassmethod

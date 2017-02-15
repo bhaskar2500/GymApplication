@@ -38,6 +38,26 @@
 <link rel="Shortcut Icon" href="{% static 'images/fitnfood.ico' %}" />  
 </head>
 <body >
+	 <div class="navbar navbar-inverse navbar-fixed-top" style="z-index:2000">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+			<a href="/index" >Application name </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+               
+                    <li><a href="/About" >About </a></li>
+                    <li><a href="/Contact" > Contact </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
   <div class="headerPnl">
     <div class="mainDiv"> <a href="index.html"><img src="{% static 'images/logo.png' %}" alt="" class="logo" /></a>
       <div class="topNav"> <div class="mnuIcon"><img src="{% static 'images/ddMnuIco.png' %}" alt="" /></div>
@@ -67,10 +87,12 @@
       </div>
     </div>
   </div>
-
+	<br>
+	<br>	<br>
+	<br>
 <div class="hmPanelOne">
 	<div class="mainDiv">
-		<h2>Know your goals? Select from these set meal plans designed by our expert team</h2>
+		
 		<div class="mainDiv2">		
 						<div class="tabSldr">
 				<div class="tabSldrLst">

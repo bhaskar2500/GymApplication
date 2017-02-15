@@ -92,8 +92,17 @@ DATABASES = {
         'PASSWORD': 'password',
         'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
         'PORT': '3306',
+      }  
+    # Database=fitforfat;Data Source=ap-cdbr-azure-southeast-b.cloudapp.net;User Id=b0e70ddb4e292c;Password=700c03e1
+    # 'default': {
+    #  'ENGINE': 'django.db.backends.mysql',
+    #  'NAME': 'fitforfat',
+    #  'USER': 'b0e70ddb4e292c',
+    #  'PASSWORD': '700c03e1',
+    #  'HOST': 'ap-cdbr-azure-southeast-b.cloudapp.net',   # Or an IP Address that your DB is hosted on
+    #  'PORT': '3306',
+    #}
         
-     }
 }
 
 
@@ -138,3 +147,17 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 #STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
+
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+         # 'rest_framework.authentication.SessionAuthentication',
+         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        #'rest_framework.authentication.BasicAuthentication'
+
+    ), 
+    "DEFAULT_PERMISSION_CLASSES": (
+        'rest_framework.permissions.IsAuthenticated',
+        #'rest_framework.permissions.IsAuthenticatedOrReadOnly',
+    )
+}

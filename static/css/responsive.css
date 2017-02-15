@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* CSS Document */
 
 @media all {
@@ -23,13 +23,13 @@
 }
 
 @media screen and (max-width: 1090px) {
-		.headerPnl{ position:fixed; top:10px; left:0; width:100%; height:74px; background:url(../images/floating-bg.png) repeat 0 0; z-index:999; }
+		.headerPnl{ position:fixed; top:51px; left:0; width:100%; height:74px; background-color:#222222; z-index:1120; }
 		.headerPnl div.mainDiv{ position:relative; height:74px; }
 		
 		.headerPnl2{ position:fixed; top:0; left:0; width:100%; height:74px; /*background:url(../images/headerBg2-mob.png) repeat-x center top;*/ z-index:999; }
 		.headerPnl2 div.mainDiv{ position:relative; height:94px; }
 		
-		.headerPnl3{ position:fixed; top:0; left:0; width:100%; height:74px; background:url(../images/floating-bg.png) repeat 0 0; z-index:999; padding-top:0; }
+		.headerPnl3{ position:fixed; top:0; left:0; width:100%; height:74px;background-color:#222222; z-index:999; padding-top:0; }
 		.headerPnl3 div.mainDiv{ position:relative; height:94px; }
 		.headerPnl3 .topNav {padding:0 140px 0 0;}
 		.headerPnl3 a img.logo {width:85px;}

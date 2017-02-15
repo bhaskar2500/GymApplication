@@ -1,0 +1,11 @@
+C:\Users\Bhaskar Kaushal\Desktop\GymProject-master\CreateAPI\obj\Release\CreateAPI.pyprojResolveAssemblyReference.cache
+C:\Users\Bhaskar Kaushal\Desktop\GymProject-master\CreateAPI\bin\Microsoft.PythonTools.WebRole.dll
+C:\Users\Bhaskar Kaushal\Desktop\GymProject-master\CreateAPI\bin\AzureSetup.cfg
+C:\Users\Bhaskar Kaushal\Desktop\GymProject-master\CreateAPI\bin\Microsoft.PythonTools.AzureSetup.exe
+C:\Users\Bhaskar Kaushal\Desktop\GymProject-master\CreateAPI\bin\Microsoft.PythonTools.AzureSetup.exe.config
+C:\Users\Bhaskar Kaushal\Desktop\GymProject-master\CreateAPI\bin\wfastcgi.py
+C:\Users\Bhaskar Kaushal\Desktop\GymProject-master\CreateAPI\obj\Release\web.config
+C:\Users\Bhaskar Kaushal\Desktop\GymProject-master\CreateAPI\obj\Release\web.debug.config
+C:\Users\Bhaskar Kaushal\Desktop\GymProject-master\CreateAPI\MonAgentListener.dll
+C:\Users\Bhaskar Kaushal\Desktop\GymProject-master\CreateAPI\obj\Release\deployment-updated-orig-prefix.txt
+C:\Users\Bhaskar Kaushal\Desktop\GymProject-master\CreateAPI\ptvs_virtualenv_proxy.py
