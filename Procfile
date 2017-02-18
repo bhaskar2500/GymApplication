@@ -1,1 +1,1 @@
-web: gunicorn fitforfat.wsgi:application --log-file -
+web: gunicorn CreateAPI.wsgi:application --log-file -
