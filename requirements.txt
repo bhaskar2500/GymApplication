@@ -25,3 +25,4 @@ django-jwt-auth==0.0.2
 djangorestframework==3.5.3
 djangorestframework-jwt==1.8.0
 gunicorn
+whitenoise

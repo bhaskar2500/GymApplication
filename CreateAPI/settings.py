@@ -26,7 +26,7 @@ SECRET_KEY = '3e587cb6-d825-4a2c-93a3-717498099411'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['fitforfat.herokuapp.com',]
+ALLOWED_HOSTS = ['fitforfat.herokuapp.com','localhost']
 
 
 # Application definition
