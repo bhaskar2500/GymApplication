@@ -12,7 +12,7 @@ def main():
     url = 'https://storage.googleapis.com/download.tensorflow.org/models/inception5h.zip'
     data_dir = 'C:/Users/Bhaskar Kaushal/Desktop'
     model_name = os.path.split(url)[-1]
-    local_zip_file = os.path.join(data_dir, model_name)
+    local_zip_file = os.path.join(data_dir, 'inception5h.zip')
     if not os.path.exists(local_zip_file):
         # Download
         model_url = urllib.request.urlopen(url)
@@ -39,6 +39,7 @@ def main():
     tf.import_graph_def(graph_def, {'input':t_preprocessed})
     
     layers = [op.name for op in graph.get_operations() if op.type=='Conv2D' and 'import/' in op.name]
+   
     feature_nums = [int(graph.get_tensor_by_name(name+':0').get_shape()[-1]) for name in layers]
     
     print('Number of layers', len(layers))
