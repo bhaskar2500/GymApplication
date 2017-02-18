@@ -24,7 +24,7 @@ var authController=function($scope, api,$window,$location) {
                     //     return false;
                     //     }
                     // }
-                    if(isAuthed())                   
+                    if(true)                   
                         {
                         $scope.user = data.username;
                         alert();    
