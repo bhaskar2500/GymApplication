@@ -1,6 +1,0 @@
-locale
-warnings
-getdefaultencoding
-sys
-DEFAULT_ENCODING
-get_stream_enc
