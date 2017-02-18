@@ -21,3 +21,6 @@ pydot==1.2.3
 requests==2.12.1
 simplegeneric==0.8.1
 six==1.10.0
+django-jwt-auth==0.0.2
+djangorestframework==3.5.3
+djangorestframework-jwt==1.8.0
