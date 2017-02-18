@@ -80,20 +80,20 @@ WSGI_APPLICATION = 'CreateAPI.wsgi.application'
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
 DATABASES = {
-    #'default': {
-    #    'ENGINE': 'django.db.backends.sqlite3',
-    #    'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    #}
-
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Orders',
-        'USER': 'root',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
-        'PORT': '3306',
-      }  
-    # Database=fitforfat;Data Source=ap-cdbr-azure-southeast-b.cloudapp.net;User Id=b0e70ddb4e292c;Password=700c03e1
+       'ENGINE': 'django.db.backends.sqlite3',
+       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'Orders',
+    #     'USER': 'root',
+    #     'PASSWORD': 'password',
+    #     'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+    #     'PORT': '3306',
+    #   }  
+    # # Database=fitforfat;Data Source=ap-cdbr-azure-southeast-b.cloudapp.net;User Id=b0e70ddb4e292c;Password=700c03e1
     # 'default': {
     #  'ENGINE': 'django.db.backends.mysql',
     #  'NAME': 'fitforfat',
