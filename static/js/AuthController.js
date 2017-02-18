@@ -12,18 +12,18 @@ var authController=function($scope, api,$window,$location) {
                 $promise.then(function(data)
                 {
                     console.log(data);
-                    $window.localStorage['jwtToken']=data.token;
-                    var saveToken =$window.localStorage['jwtToken'] ;
-                    var isAuthed = function() {
-                    var token = self.getToken();
-                     if(saveToken) {
-                        var params = self.parseJwt(saveToken);
-                         return true;
-                        } 
-                    else {
-                        return false;
-                        }
-                    }
+                    // $window.localStorage['jwtToken']=data.token;
+                    // var saveToken =$window.localStorage['jwtToken'] ;
+                    // var isAuthed = function() {
+                    // var token = self.getToken();
+                    //  if(saveToken) {
+                    //     var params = self.parseJwt(saveToken);
+                    //      return true;
+                    //     } 
+                    // else {
+                    //     return false;
+                    //     }
+                    // }
                     if(isAuthed())                   
                         {
                         $scope.user = data.username;
